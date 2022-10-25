@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSV IMPORT SYSTEM</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/952B8C4D-60BF-5F4E-AE14-6E3862642F5A/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/4F028CB1-00CA-0643-B49A-CDF3B959EF60/abn/main.css"/><style>
+    .invoice-box {
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #eee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+        font-size: 14px;
+        line-height: 20px;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        color: black;
+    }
+
+    #paypal-button-container {
+        text-align: center;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+
+    .button {
+        background-color: #9C9797;
+        border: 1px solid #9C9797;
+        color: white;
+        padding: 15px 32px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        text-align: center;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        transition: .5s ease
+    }
+
+    .button:hover {
+        border: 1px solid #9C9797;
+        background-color: #9C9797;
+        color: black;
+    }
+
+    .invoice-box table {
+        width: 100%;
+        line-height: inherit;
+        text-align: left;
+    }
+
+    .invoice-box table td {
+        padding: 5px;
+        vertical-align: top;
+    }
+
+    .invoice-box table tr td:nth-child(2) {
+        text-align: right;
+    }
+
+    .invoice-box table tr.top table td {
+        padding-bottom: 20px;
+    }
+
+    .invoice-box table tr.top table td.title {
+        font-size: 45px;
+        line-height: 45px;
+        color: #333;
+    }
+
+    .invoice-box table tr.information table td {
+        padding-bottom: 40px;
+    }
+
+    .invoice-box table tr.heading td {
+        background: #BFB9B9;
+        border-bottom: 1px solid #BFB9B9;
+        font-weight: bold;
+    }
+
+    .invoice-box table tr.details td {
+        padding-bottom: 20px;
+    }
+
+    .invoice-box table tr.item td {
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .invoice-box table tr.item.last td {
+        border-bottom: none;
+    }
+
+    .invoice-box table tr.total td:nth-child(2) {
+        border-top: 2px solid #ffffff;
+        font-weight: bold;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .invoice-box table tr.top table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+
+        .invoice-box table tr.information table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
+    /** RTL **/
+
+    .rtl {
+        direction: rtl;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    }
+
+    .rtl table {
+        text-align: right;
+    }
+
+    .rtl table tr td:nth-child(2) {
+        text-align: left;
+        background: #CECECE
+    }
+
+    #Serial {
+        border-radius: 8px;
+        width: 300px;
+        height: 20px;
+    }
+
+    #ss {
+        width: 87%;
+    }
+
+    #tablecontent {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 35%;
+    }
+
+    #tablecontent td,
+    #tablecontent th {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+    }
+
+    #tablecontent tr:nth-child(even) {
+        background-color: #f2f2f2;
+        text-align: center;
+    }
+
+    #tablecontent tr:hover {
+        background-color: #ddd;
+    }
+
+    #tablecontent th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: #3b5998;
+        color: white;
+    }
+</style>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/76750D93-CFC3-C74F-B7DF-AA62C384131C/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/57968619-9DAB-CF4E-B16C-C90312890B72/abn/main.css"/></head>
+
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert2@7.19.1/dist/sweetalert2.all.js"></script>
+<div class="invoice-box">
+    <p></p>
+    <p></p>
+    <p></p>
+    <table cellpadding="0" cellspacing="0" id="podetails">
+        <tr class="top">
+            <td colspan="2">
+                <table>
+                    <tr>
+                        <td class="title">
+                            <img src="http://static.wixstatic.com/media/d211bc_629e5ed9a74f46bc9723b77dbaed35c4.png" style="width:100%; max-width:300px;">
+                        </td>
+                        <td>
+                            <invoicetranid>
+                                <br> Date:
+                                <invoicecreateddate>
+                                    <br>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr class="information">
+            <td colspan="2">
+                <table>
+                    <tr>
+                        <td>
+                            <p>
+                                Choose Record Types:
+                                <select name="recordtypes" id="recordtypes" data-mapid="" onchange="recordchange()">
+                                    <option data-mapid="20771" value="customrecord_jj_branded_handset">Branded Handset</option>
+                                    <!-- <option data-mapid="20769" value="customrecord_jj_route_run">Route Run</option> -->
+                                    <option data-mapid="20768" value="customrecord_jj_qpay_marketplace_details">Qpay MarketPlace Details</option>
+                                    <option data-mapid="20767" value="customrecord_jj_qpaydetail_transaction">Qpay Detailed transaction</option>
+                                    <option data-mapid="20770" value="customrecord_jj_tracfone_activations">Tracfone Activations</option>
+                                    <!-- <option data-mapid="20766" value="customrecord223">Activation Verizon Vidapay</option> -->
+                                    <option data-mapid="701461" value="customrecord_jj_marketplace_sales_order">Marketplace Sales Order</option>
+                                    <option data-mapid="814698" value="customrecord_jj_tracfone_activations">Spiff Amount</option>
+                                    <option data-mapid="815359" value="customrecord_jj_tracfone_activations">Residual Monthly</option>
+                                </select>
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                Choose Actions:
+                                <select name="recordactions" id="recordactions">
+                                    <option value="create">Create</option>
+                                    <option value="update">Update</option>
+                                    <option value="delete">Delete</option>
+                                    <option value="deleteduplicate">Delete Duplicates</option>
+                                </select>
+                            </p>
+                            <p id="deleteduplicateactionp">
+                                Choose Range:
+                                <select name="deleteduplicateaction" id="deleteduplicateaction">
+                                    <option value="today">Created Today</option>
+                                    <option value="yesterday">Created Yesterday</option>
+                                    <option value="fivedaysago">Created Five Days Ago</option>
+                                    <option value="thisweek">Created In This Week</option>
+                                    <option value="thismonth">Created This Month</option>
+                                    <option value="all">Delete All Duplicates</option>
+                                </select>
+                            </p>
+                            <p id="deleteactionsp">
+                                Choose Range:
+                                <select name="deleteactions" id="deleteactions">
+                                    <option value="today">Created Today</option>
+                                    <option value="yesterday">Created Yesterday</option>
+                                    <option value="fivedaysago">Created Five Days Ago</option>
+                                    <option value="thisweek">Created In This Week</option>
+                                    <option value="thismonth">Created This Month</option>
+                                    <option value="all">Delete All</option>
+                                </select>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                <input type="file" name="filename" id="filename">
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                E-mail:
+                                <input type="email" value="al@megatelwireless.com" name="emailaddress"> </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr class="heading">
+            <td>
+                Column Headers
+            </td>
+            <td>
+                Netsuite Field Names
+            </td>
+        </tr>
+        <replacewithitemdetails>
+            <!--<tr class="total">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr> -->
+    </table>
+    <p></p>
+    <p></p>
+    <div id="paypal-button-container">
+        <button type="button" class="button" onclick="startproccessing()">Process</button>
+        <button type="button" class="button" onclick="startReset()">Reset</button>
+    </div>
+</div>
+<script>
+    var chunks;
+    var title;
+    var mapobj;
+    var foldername;
+    var csvColumns;
+
+    function startReset() {
+        location.reload()
+
+    }
+
+    function recordchange() {
+        var recordtype = $("#recordtypes").val();
+        // var fieldlists = postdata(recordtype, "getfield");
+    }
+
+    function csvToArray(text) {
+        let p = '',
+            row = [''],
+            ret = [row],
+            i = 0,
+            r = 0,
+            s = !0,
+            l;
+        for (l of text) {
+            //l.split('\r').join('')
+            if ('"' === l) {
+                if (s && l === p) row[i] += l;
+                s = !s;
+            } else if ('\t' === l && s) l = row[++i] = '';
+            else if ('\n' === l && s) {
+                if ('\r' === p) row[i] = row[i].slice(0, -1);
+                row = ret[++r] = [l = ''];
+                i = 0;
+            } else row[i] += l;
+            p = l;
+        }
+        var csvObj = {};
+        var val = ret.slice(1);
+        console.log('val',val)
+        csvObj.contents = val
+        csvObj.title = ret[0];
+        return csvObj;
+    };
+    var validations = {
+        email: [/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/, 'Please enter a valid email address']
+    };
+    $(document).ready(function() {
+        $("#deleteactionsp").hide();
+        $("#deleteduplicateactionp").hide();
+
+        $("#recordactions").change(function() {
+            if ($("#recordactions").val() == "delete") {
+                $("#deleteactionsp").show();
+            } else {
+                $("#deleteactionsp").hide();
+            }
+            if ($("#recordactions").val() == "deleteduplicate") {
+                $("#deleteduplicateactionp").show();
+            } else {
+                $("#deleteduplicateactionp").hide();
+            }
+        });
+        $("input[type=email]").change(function() {
+            validation = new RegExp(validations['email'][0]);
+
+            if (!validation.test(this.value)) {
+                swal("Please Enter a Valid Email");
+                $("input[type=email]").val("");
+            } else {}
+        });
+    })
+    /*Field change event of CSV upload*/
+    $("#filename").change(function(e) {
+        var ext = $("input#filename").val().split(".").pop().toLowerCase();
+        if ($.inArray(ext, ["csv"]) == -1 && $.inArray(ext, ["txt"]) == -1) {
+            swal('Please Upload a CSV File !!!');
+            $("input#filename").val("");
+            return false;
+        }
+        if (e.target.files != undefined) {
+            document.getElementById("filename").disabled = true;
+            document.getElementById("recordactions").disabled = true;
+            var reader = new FileReader();
+            reader.onload = function(e) {
+
+                console.log('csv input',e.target.result)
+                var csvval = e.target.result.split("\n");
+                console.log('updated input',e.target.result)
+                var csvObj = csvToArray(e.target.result);
+                console.log('csvObj',csvObj);
+
+                setfieldmap(csvObj.title, "title", true);
+                title = csvObj.title;
+                chunks = splicetochunks(csvObj.contents, 5000);
+                console.log('chunks',chunks)
+            };
+            console.log('e.target.files.item(0)',e.target.files.item(0))
+            reader.readAsText(e.target.files.item(0));
+        }
+        return false;
+    });
+
+    function startproccessing() {
+        if ($("input[type=email]").val() == null || $("input[type=email]").val() == "") {
+            swal("Email Field Is empty !!! ");
+            return false
+        }
+        var recorddetails = {
+            recordtype: $("#recordtypes").val(),
+            operation: $("#recordactions").val(),
+            recordname: $("#recordtypes option:selected").text()
+        }
+        if (recorddetails.operation == "delete") {
+            if (ConfirmDelete() == false) {
+
+                return false
+            }
+            foldername = Date.now();
+            var contextwork = {};
+            contextwork.mapobj = mapobj;
+            contextwork.contextdetails = recorddetails;
+            contextwork.deletedetail = $("#deleteactions").val();
+            contextwork.emailaddress = $("input[type=email]").val();
+
+            postdata(JSON.stringify("chunks[i]"), "endgame", JSON.stringify(contextwork), foldername);
+        }
+        else if(recorddetails.operation == "deleteduplicate") {
+            if (ConfirmDeleteDuplicate() == false) {
+
+                return false
+            }
+            foldername = Date.now();
+            var contextwork = {};
+            contextwork.mapobj = mapobj;
+            contextwork.contextdetails = recorddetails;
+            contextwork.deletedetail = $("#deleteduplicateaction").val();
+            contextwork.emailaddress = $("input[type=email]").val();
+
+            postdata(JSON.stringify("chunks[i]"), "endgame", JSON.stringify(contextwork), foldername);
+
+        }
+        else {
+            if (chunks == undefined) {
+                swal("Please Upload a csv File !!! ");
+                return false
+            }
+            if (jQuery.isEmptyObject(mapobj) == true) {
+                swal("Mapping is not Done!!!");
+                return false
+            }
+
+            var len = chunks.length;
+
+            var contextwork = {};
+
+            contextwork.mapobj = mapobj;
+            contextwork.contextdetails = recorddetails;
+            contextwork.emailaddress = $("input[type=email]").val();
+            contextwork.csvColumns = csvColumns;
+            console.log(contextwork)
+            foldername = Date.now();
+            console.log('len',len)
+            for (var i = 0; i < len; i++) {
+                if (i == len - 1) {
+
+                } else {
+                    postdata(JSON.stringify(chunks[i]), "processing", JSON.stringify(contextwork), foldername);
+                }
+            }
+
+            postdata(JSON.stringify(chunks[len-1]), "endgame", JSON.stringify(contextwork), foldername)
+
+        }
+        swal("Proccess Started !", "Email Notification will be Sent to " +
+            $("input[type=email]").val(), "success");
+
+
+        swal({
+            title: 'Proccess Started !',
+            text: 'Email Notification will be Sent to ' + $("input[type=email]").val(),
+            type: 'success',
+            showCancelButton: true,
+            confirmButtonText: 'OK',
+            confirmButtonClass: 'btn-success'
+        }).then(function() {
+            location.reload()
+            //success method
+        }, function(dismiss) {
+
+        });
+
+
+    }
+
+    function ConfirmDelete() {
+        var x = confirm("Do you want to delete the records of " + $("#recordtypes option:selected").text());
+        if (x)
+            return true;
+        else
+            return false;
+    }
+    function ConfirmDeleteDuplicate() {
+        var x = confirm("Do you want to delete the Duplicate records of " + $("#recordtypes option:selected").text());
+        if (x)
+            return true;
+        else
+            return false;
+    }
+
+
+
+    function setfieldmap(data, type, flag) {
+        //    try{
+        //         var row = document.getElementById("maprow");
+        //   row.parentNode.removeChild(row);
+        //  }
+        // catch(e)
+        // {
+        //  console.debug(e.message)
+        // }
+        document.getElementById("recordtypes").disabled = true;
+        if (flag == true) {
+            var appenddata = postdata(data.toString(), "getfield", jQuery("#recordtypes").find(':selected').attr('data-mapid'));
+        } else {
+            console.log(data);
+            data = JSON.parse(data);
+            csvColumns = data.csvColumns;
+            mapobj = data.mapobj;
+            data = data.tempobj;
+            console.log("csvColumns", csvColumns)
+            var flag = true;
+            for (var index in data) {
+                var attr = data[index];
+                if (flag) {
+                    $('#podetails').append('<tr id="maprow" style="background:#E4DFDF;"><td>' + index + '</td><td> ' + data[index] + ' </td></tr>');
+                    flag = !flag;
+                } else {
+                    $('#podetails').append('<tr id="maprow" style="background:white;"><td>' + index + '</td><td> ' + data[index] + ' </td></tr>');
+                    flag = !flag;
+                }
+
+            }
+            /*        for (var i = 0; i < data.length; i++) {
+                        $('#podetails').append('<tr><td>' + data[i] + '</td><td>   </td></tr>');
+                    }*/
+        }
+    }
+    /*function to cut the elemerns to chunks */
+    function splicetochunks(inputArray, chunk) {
+        if(inputArray.length<chunk){
+
+            return [inputArray];
+        }
+        var i, j, temparray = [];
+        for (i = 0, j = inputArray.length; i < j; i += chunk) {
+            temparray.push(
+                inputArray.slice(i, i + chunk));
+        }
+        return temparray;
+    }
+    /*To post the data to netsuite suitelet / restlet */
+    function postdata(data, type, mapfile, foldername) {
+        var response;
+        console.log('postdata  ' + type + "  " + mapfile);
+        $.post("<scripturl>", {
+                datas: data,
+                type: type,
+                mapfile: mapfile,
+                foldername: foldername
+            },
+            function(data, status) {
+                if (type == "getfield") {
+                    setfieldmap(data, "setfieldmap", false);
+                }
+            });
+        return response;
+    }
+    // for getting parameter by name
+    function getParameterByName(name, url) {
+        if (!url)
+            url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex
+                .exec(url);
+        if (!results)
+            return null;
+        if (!results[2])
+            return ' ';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+</script>
+</body>
+
+</html>
