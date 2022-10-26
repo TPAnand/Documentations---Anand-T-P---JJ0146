@@ -1,0 +1,124 @@
+<customlist scriptid="customlist_jj_marketing_flag_new">
+  <description>create a new marketing flag custom list.</description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>F</isordered>
+  <name>Marketing Flag New</name>
+  <customvalues>
+    <customvalue scriptid="val_5501079_6687177_756">
+      <abbreviation>A</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Australian Sport Nutrition</value>
+    </customvalue>
+    <customvalue scriptid="val_4303915_6687177_141">
+      <abbreviation>B</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Blooms</value>
+    </customvalue>
+    <customvalue scriptid="val_5501076_6687177_560">
+      <abbreviation>C</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Capital Chemist</value>
+    </customvalue>
+    <customvalue scriptid="val_5501077_6687177_874">
+      <abbreviation>C</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Chemist King</value>
+    </customvalue>
+    <customvalue scriptid="val_5420179_6687177_463">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Chemist Outlet</value>
+    </customvalue>
+    <customvalue scriptid="val_5501072_6687177_682">
+      <abbreviation>B</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Chempro</value>
+    </customvalue>
+    <customvalue scriptid="val_4303916_6687177_200">
+      <abbreviation>S</abbreviation>
+      <isinactive>F</isinactive>
+      <value>DDS</value>
+    </customvalue>
+    <customvalue scriptid="val_5501070_6687177_780">
+      <abbreviation>D</abbreviation>
+      <isinactive>F</isinactive>
+      <value>DDS-Wholelife</value>
+    </customvalue>
+    <customvalue scriptid="val_5501074_6687177_640">
+      <abbreviation>F</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Flannerys</value>
+    </customvalue>
+    <customvalue scriptid="val_5501065_6687177_686">
+      <abbreviation>G</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Go Vita</value>
+    </customvalue>
+    <customvalue scriptid="val_5501064_6687177_834">
+      <abbreviation>H</abbreviation>
+      <isinactive>F</isinactive>
+      <value>HF-Independent</value>
+    </customvalue>
+    <customvalue scriptid="val_5501078_6687177_705">
+      <abbreviation>I</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Infinity</value>
+    </customvalue>
+    <customvalue scriptid="val_5501069_6687177_376">
+      <abbreviation>L</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Livelife</value>
+    </customvalue>
+    <customvalue scriptid="val_5420232_6687177_114">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Mr Vitamins</value>
+    </customvalue>
+    <customvalue scriptid="val_5420180_6687177_276">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>National Pharmacies</value>
+    </customvalue>
+    <customvalue scriptid="val_5501068_6687177_702">
+      <abbreviation>N</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Non-Banner</value>
+    </customvalue>
+    <customvalue scriptid="val_5501067_6687177_328">
+      <abbreviation>N</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Nutrition Warehouse</value>
+    </customvalue>
+    <customvalue scriptid="val_5501066_6687177_781">
+      <abbreviation>P</abbreviation>
+      <isinactive>F</isinactive>
+      <value>PH-Independent</value>
+    </customvalue>
+    <customvalue scriptid="val_5501075_6687177_403">
+      <abbreviation>P</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Pharmacy Alliance</value>
+    </customvalue>
+    <customvalue scriptid="val_5501071_6687177_475">
+      <abbreviation>R</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Rener</value>
+    </customvalue>
+    <customvalue scriptid="val_5420299_6687177_421">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Star Discount Chemist</value>
+    </customvalue>
+    <customvalue scriptid="val_5501073_6687177_521">
+      <abbreviation>S</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Superpharmacy</value>
+    </customvalue>
+    <customvalue scriptid="val_4303917_6687177_270">
+      <abbreviation>T</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Terrywhite</value>
+    </customvalue>
+  </customvalues>
+</customlist>

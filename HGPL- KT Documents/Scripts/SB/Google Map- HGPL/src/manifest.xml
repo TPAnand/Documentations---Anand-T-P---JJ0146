@@ -1,0 +1,22 @@
+<manifest projecttype="ACCOUNTCUSTOMIZATION">
+  <projectname>Google Map- HGPL</projectname>
+  <frameworkversion>1.0</frameworkversion>
+  <dependencies>
+    <features>
+      <feature required="false">MULTILANGUAGE</feature>
+      <feature required="false">SUPPORT</feature>
+      <feature required="false">MATRIXITEMS</feature>
+      <feature required="false">CUSTOMSEGMENTS</feature>
+      <feature required="false">EXTREMELIST</feature>
+      <feature required="false">MAILMERGE</feature>
+      <feature required="false">MARKETING</feature>
+      <feature required="true">CUSTOMRECORDS</feature>
+      <feature required="false">KNOWLEDGEBASE</feature>
+      <feature required="false">CREATESUITEBUNDLES</feature>
+    </features>
+    <objects>
+      <object>customrole_hog_sales_role</object>
+
+    </objects>
+  </dependencies>
+</manifest>

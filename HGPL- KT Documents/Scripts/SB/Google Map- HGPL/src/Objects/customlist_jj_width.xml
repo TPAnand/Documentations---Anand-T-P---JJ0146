@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_jj_width">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>List of width </name>
+  <customvalues>
+    <customvalue scriptid="val_4154363_6687177_271">
+      <abbreviation>9</abbreviation>
+      <isinactive>F</isinactive>
+      <value>600 mm</value>
+    </customvalue>
+    <customvalue scriptid="val_4154364_6687177_353">
+      <abbreviation>9</abbreviation>
+      <isinactive>F</isinactive>
+      <value>900 mm</value>
+    </customvalue>
+    <customvalue scriptid="val_4154365_6687177_605">
+      <abbreviation>1</abbreviation>
+      <isinactive>F</isinactive>
+      <value>1000 mm</value>
+    </customvalue>
+  </customvalues>
+</customlist>

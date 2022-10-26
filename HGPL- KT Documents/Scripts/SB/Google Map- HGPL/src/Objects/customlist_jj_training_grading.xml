@@ -1,0 +1,29 @@
+<customlist scriptid="customlist_jj_training_grading">
+  <description>Training Grading List</description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>Training Grading</name>
+  <customvalues>
+    <customvalue scriptid="val_4333353_6687177_404">
+      <abbreviation>1</abbreviation>
+      <isinactive>F</isinactive>
+      <value>1</value>
+    </customvalue>
+    <customvalue scriptid="val_4333354_6687177_906">
+      <abbreviation>2</abbreviation>
+      <isinactive>F</isinactive>
+      <value>2</value>
+    </customvalue>
+    <customvalue scriptid="val_4333355_6687177_952">
+      <abbreviation>3</abbreviation>
+      <isinactive>F</isinactive>
+      <value>3</value>
+    </customvalue>
+    <customvalue scriptid="val_4333356_6687177_140">
+      <abbreviation>4</abbreviation>
+      <isinactive>F</isinactive>
+      <value>4</value>
+    </customvalue>
+  </customvalues>
+</customlist>

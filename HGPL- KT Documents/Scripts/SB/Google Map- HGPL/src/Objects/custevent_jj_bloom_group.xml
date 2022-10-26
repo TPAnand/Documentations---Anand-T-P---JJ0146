@@ -1,0 +1,46 @@
+<crmcustomfield scriptid="custevent_jj_bloom_group">
+  <accesslevel>2</accesslevel>
+  <appliesperkeyword>F</appliesperkeyword>
+  <appliestocampaign>F</appliestocampaign>
+  <appliestocase>F</appliestocase>
+  <appliestoevent>F</appliestoevent>
+  <appliestophonecall>F</appliestophonecall>
+  <appliestosolution>F</appliestosolution>
+  <appliestotask>T</appliestotask>
+  <applyformatting>F</applyformatting>
+  <availableexternally>F</availableexternally>
+  <checkspelling>F</checkspelling>
+  <defaultchecked>F</defaultchecked>
+  <defaultselection></defaultselection>
+  <defaultvalue></defaultvalue>
+  <description>This field is used to display the selected customer banner group in the task record.</description>
+  <displayheight></displayheight>
+  <displaytype>STATICTEXT</displaytype>
+  <displaywidth></displaywidth>
+  <dynamicdefault></dynamicdefault>
+  <encryptatrest>F</encryptatrest>
+  <fieldtype>SELECT</fieldtype>
+  <globalsearch>F</globalsearch>
+  <help>This field is used to display the selected customer banner group in the task record.</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <isparent>F</isparent>
+  <label>Banner Group</label>
+  <linktext></linktext>
+  <maxlength></maxlength>
+  <maxvalue></maxvalue>
+  <minvalue></minvalue>
+  <onparentdelete>NO_ACTION</onparentdelete>
+  <parentsubtab></parentsubtab>
+  <searchcomparefield></searchcomparefield>
+  <searchdefault></searchdefault>
+  <searchlevel>2</searchlevel>
+  <selectrecordtype>[scriptid=customlist_jj_marketing_flag_new]</selectrecordtype>
+  <showhierarchy>F</showhierarchy>
+  <showinlist>F</showinlist>
+  <sourcefilterby></sourcefilterby>
+  <sourcefrom>[scriptid=custentity_jj_crm_form]</sourcefrom>
+  <sourcelist>STDEVENTCOMPANY</sourcelist>
+  <storevalue>T</storevalue>
+  <subtab>CRMMAIN</subtab>
+</crmcustomfield>

@@ -1,0 +1,204 @@
+<customlist scriptid="customlist_jj_customer_grades">
+  <description>Brick is grouping of stores for Sales person&apos;s journey planning purpose.</description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>HOG Brick</name>
+  <customvalues>
+    <customvalue scriptid="val_4154343_6687177_534">
+      <abbreviation>A</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Ballina/Murwillimbah</value>
+    </customvalue>
+    <customvalue scriptid="val_4154344_6687177_704">
+      <abbreviation>B</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Beenleigh</value>
+    </customvalue>
+    <customvalue scriptid="val_4154345_6687177_371">
+      <abbreviation>C</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Benowa</value>
+    </customvalue>
+    <customvalue scriptid="val_4154346_6687177_631">
+      <abbreviation>D</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Broadbeach</value>
+    </customvalue>
+    <customvalue scriptid="val_6085467_6687177_852">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Burleigh</value>
+    </customvalue>
+    <customvalue scriptid="val_6085468_6687177_663">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Byron</value>
+    </customvalue>
+    <customvalue scriptid="val_6085469_6687177_286">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Jimboomba</value>
+    </customvalue>
+    <customvalue scriptid="val_6085470_6687177_445">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Lismore</value>
+    </customvalue>
+    <customvalue scriptid="val_6085471_6687177_977">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Nerang</value>
+    </customvalue>
+    <customvalue scriptid="val_6085472_6687177_621">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-North GC 1</value>
+    </customvalue>
+    <customvalue scriptid="val_6085473_6687177_436">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-North GC 2</value>
+    </customvalue>
+    <customvalue scriptid="val_6085474_6687177_631">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Palm Beach</value>
+    </customvalue>
+    <customvalue scriptid="val_6085475_6687177_361">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Robina</value>
+    </customvalue>
+    <customvalue scriptid="val_6085476_6687177_748">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Southport</value>
+    </customvalue>
+    <customvalue scriptid="val_6085477_6687177_737">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Surfers Para/Sth Bris</value>
+    </customvalue>
+    <customvalue scriptid="val_6085478_6687177_427">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Toowoomba 1</value>
+    </customvalue>
+    <customvalue scriptid="val_6085479_6687177_438">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Toowoomba 2</value>
+    </customvalue>
+    <customvalue scriptid="val_6085480_6687177_816">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Tweed 1</value>
+    </customvalue>
+    <customvalue scriptid="val_6085481_6687177_713">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD1-Tweed 2</value>
+    </customvalue>
+    <customvalue scriptid="val_6085482_6687177_332">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-Bayside 1</value>
+    </customvalue>
+    <customvalue scriptid="val_6085483_6687177_321">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-Bayside 2</value>
+    </customvalue>
+    <customvalue scriptid="val_6085484_6687177_198">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-Central Brisbane 1</value>
+    </customvalue>
+    <customvalue scriptid="val_6085485_6687177_613">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-Central Brisbane 2</value>
+    </customvalue>
+    <customvalue scriptid="val_6085486_6687177_616">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-FNQ Cairns 1</value>
+    </customvalue>
+    <customvalue scriptid="val_6085487_6687177_883">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-FNQ Cairns 2</value>
+    </customvalue>
+    <customvalue scriptid="val_6085488_6687177_464">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-FNQ Tablelands</value>
+    </customvalue>
+    <customvalue scriptid="val_6085489_6687177_288">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-Inner Sth Brisbane 1</value>
+    </customvalue>
+    <customvalue scriptid="val_6085490_6687177_967">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-Inner Sth Brisbane 2</value>
+    </customvalue>
+    <customvalue scriptid="val_6085491_6687177_134">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-Ipswich</value>
+    </customvalue>
+    <customvalue scriptid="val_6085492_6687177_660">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-Nth Brisbane 1</value>
+    </customvalue>
+    <customvalue scriptid="val_6085493_6687177_683">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-Nth Brisbane 2</value>
+    </customvalue>
+    <customvalue scriptid="val_6085494_6687177_647">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-Nth West Brisbane 1</value>
+    </customvalue>
+    <customvalue scriptid="val_6085495_6687177_551">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-Nth West Brisbane 2</value>
+    </customvalue>
+    <customvalue scriptid="val_6085496_6687177_382">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-Sth Brisbane 1</value>
+    </customvalue>
+    <customvalue scriptid="val_6085497_6687177_245">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-Sth Brisbane 2</value>
+    </customvalue>
+    <customvalue scriptid="val_6085498_6687177_102">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-Sth West Brisbane 1</value>
+    </customvalue>
+    <customvalue scriptid="val_6085499_6687177_342">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-Sth West Brisbane 2</value>
+    </customvalue>
+    <customvalue scriptid="val_6085500_6687177_644">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-Sth West Brisbane 3</value>
+    </customvalue>
+    <customvalue scriptid="val_6085501_6687177_374">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>QLD2-West Brisbane 1</value>
+    </customvalue>
+  </customvalues>
+</customlist>

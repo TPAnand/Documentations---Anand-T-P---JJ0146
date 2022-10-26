@@ -1,0 +1,47 @@
+<crmcustomfield scriptid="custevent_jj_monthly_information">
+  <accesslevel>2</accesslevel>
+  <appliesperkeyword>F</appliesperkeyword>
+  <appliestocampaign>F</appliestocampaign>
+  <appliestocase>F</appliestocase>
+  <appliestoevent>F</appliestoevent>
+  <appliestophonecall>F</appliestophonecall>
+  <appliestosolution>F</appliestosolution>
+  <appliestotask>T</appliestotask>
+  <applyformatting>F</applyformatting>
+  <availableexternally>F</availableexternally>
+  <checkspelling>F</checkspelling>
+  <defaultchecked>F</defaultchecked>
+  <defaultselection></defaultselection>
+  <defaultvalue></defaultvalue>
+  <description>This field is used to enter the monthly information about store visits in the task.</description>
+  <displayheight>20</displayheight>
+  <displaytype>NORMAL</displaytype>
+  <displaywidth>90</displaywidth>
+  <dynamicdefault></dynamicdefault>
+  <encryptatrest>F</encryptatrest>
+  <fieldtype>TEXTAREA</fieldtype>
+  <globalsearch>F</globalsearch>
+  <help>Monthly information related to the store/banner in the task&#xd;
+i.e. Monthly deals, Banner focus for the month, Catalogue deals etc.</help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <isparent>F</isparent>
+  <label>Monthly Information</label>
+  <linktext></linktext>
+  <maxlength></maxlength>
+  <maxvalue></maxvalue>
+  <minvalue></minvalue>
+  <onparentdelete></onparentdelete>
+  <parentsubtab></parentsubtab>
+  <searchcomparefield></searchcomparefield>
+  <searchdefault></searchdefault>
+  <searchlevel>2</searchlevel>
+  <selectrecordtype></selectrecordtype>
+  <showhierarchy>F</showhierarchy>
+  <showinlist>T</showinlist>
+  <sourcefilterby></sourcefilterby>
+  <sourcefrom></sourcefrom>
+  <sourcelist></sourcelist>
+  <storevalue>T</storevalue>
+  <subtab>[scriptid=custtab_261_6687177_911]</subtab>
+</crmcustomfield>

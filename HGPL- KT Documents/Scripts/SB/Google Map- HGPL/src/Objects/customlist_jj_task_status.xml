@@ -1,0 +1,29 @@
+<customlist scriptid="customlist_jj_task_status">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>Task Status</name>
+  <customvalues>
+    <customvalue scriptid="val_4154337_6687177_556">
+      <abbreviation>P</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Pending</value>
+    </customvalue>
+    <customvalue scriptid="val_4154338_6687177_755">
+      <abbreviation>I</abbreviation>
+      <isinactive>F</isinactive>
+      <value>In Progress</value>
+    </customvalue>
+    <customvalue scriptid="val_4154339_6687177_220">
+      <abbreviation>S</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Success</value>
+    </customvalue>
+    <customvalue scriptid="val_4154340_6687177_758">
+      <abbreviation>F</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Failed</value>
+    </customvalue>
+  </customvalues>
+</customlist>
