@@ -1,0 +1,25 @@
+<portlet scriptid="customscript_jj_pl_nps_survey_responses">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>JJ PL NPS Responses OTGN-1517</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <portlettype>LIST</portlettype>
+  <scriptfile>[/SuiteScripts/Jobin and Jismi IT Services LLP/NPS Survey/JJ PL NPS Responses OTGN-1517.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_jj_pl_nps_survey_responses">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <dashboardapp>F</dashboardapp>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>JJ PL NPS Responses OTGN-1517</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</portlet>

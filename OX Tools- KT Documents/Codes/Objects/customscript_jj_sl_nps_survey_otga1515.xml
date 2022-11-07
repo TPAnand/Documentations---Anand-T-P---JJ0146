@@ -1,0 +1,25 @@
+<suitelet scriptid="customscript_jj_sl_nps_survey_otga1515">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>JJ SL NPS Survey OTGA-1515</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/Jobin and Jismi IT Services LLP/NPS Survey/JJ SL NPS Survey OTGA-1515.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_jj_sl_nps_survey_otga1515">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole></audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>T</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>JJ SL NPS Survey OTGA-1515</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

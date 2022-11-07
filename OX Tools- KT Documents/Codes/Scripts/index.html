@@ -1,0 +1,480 @@
+<style type="text/css">/* ******************************************************
+  Author URI: https://codeconvey.com/
+  Demo Purpose Only - May not require to add.
+  font-family: "Raleway",sans-serif;
+  *********************************************************/
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+article, header, section, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+body {
+    background: #ffffff none repeat scroll 0 0;
+    color: #222;
+    font-size: 100%;
+    line-height: 24px;
+    margin: 0;
+    padding:0;
+    font-family: "Raleway",sans-serif;
+}
+form{
+    width: 100%;
+    text-align: center;
+}
+a{
+    font-family: "Raleway",sans-serif;
+    text-decoration: none;
+    outline: none;
+}
+a:hover, a:focus {
+    color: #373e18;
+}
+section {
+    float: left;
+    width: 100%;
+    padding-bottom:3em;
+}
+h2 {
+    color: #1a0e0e;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    line-height: normal;
+    text-transform:uppercase;
+}
+h2 span {
+    display: block;
+    padding: 0;
+    font-size: 18px;
+    opacity: 0.7;
+    margin-top: 5px;
+    text-transform:uppercase;
+}
+#float-right{
+    float:right;
+}
+/* ******************************************************
+Script Top
+*********************************************************/
+.ScriptTop {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    font-size: 0.69em;
+    font-weight: 600;
+    line-height: 2.2;
+    padding: 12px 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+/* To Navigation Style 1*/
+.ScriptTop ul {
+    margin: 24px 0;
+    padding: 0;
+    text-align: left;
+}
+.ScriptTop li{
+    list-style:none;
+    display:inline-block;
+}
+.ScriptTop li a {
+    background: #6a4aed none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 18px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.ScriptTop li a:hover{
+    background:#000;
+    color:#fff;
+}
+/* ******************************************************
+Script Header
+*********************************************************/
+.ScriptHeader {
+    float: left;
+    width: 100%;
+    padding: 2em 0;
+}
+.rt-heading {
+    margin: 0 auto;
+    text-align:center;
+}
+.Scriptcontent{
+    line-height:28px;
+}
+.ScriptHeader h1{
+    font-family: "brandon-grotesque", "Brandon Grotesque", "Source Sans Pro", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #6a4aed;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    line-height: normal;
+}
+.ScriptHeader h2 {
+    color: #312c8f;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0 0;
+    line-height: normal;
+}
+.ScriptHeader h1 span {
+    display: block;
+    padding: 0;
+    font-size: 22px;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+.ScriptHeader span {
+    display: block;
+    padding: 0;
+    font-size: 22px;
+    opacity: 0.7;
+    margin-top: 5px;
+}
+/* ******************************************************
+Live Demo
+*********************************************************/
+/* ******************************************************
+Responsive Grids
+*********************************************************/
+.rt-container {
+    margin: 0 auto;
+    padding-left:12px;
+    padding-right:12px;
+}
+.rt-row:before, .rt-row:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.rt-row:after {
+    clear: both;
+}
+[class^="col-rt-"] {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    padding: 0 15px;
+    min-height: 1px;
+    position: relative;
+}
+@media (min-width: 768px) {
+    .rt-container {
+        width: 750px;
+    }
+    [class^="col-rt-"] {
+        float: left;
+        width: 49.9999999999%;
+    }
+    .col-rt-6, .col-rt-12 {
+        width: 100%;
+    }
+}
+@media (min-width: 1200px) {
+    .rt-container {
+        width: 1170px;
+    }
+    .col-rt-1 {
+        width:16.6%;
+    }
+    .col-rt-2 {
+        width:30.33%;
+    }
+    .col-rt-3 {
+        width:50%;
+    }
+    .col-rt-4 {
+        width: 67.664%;
+    }
+    .col-rt-5 {
+        width: 83.33%;
+    }
+}
+@media only screen and (min-width:240px) and (max-width: 768px){
+    .ScriptTop h1, .ScriptTop ul {
+        text-align: center;
+    }
+    .ScriptTop h1{
+        margin-top:0;
+        margin-bottom:15px;
+    }
+    .ScriptTop ul{
+        margin-top:12px;
+    }
+    .ScriptHeader h1,
+    .ScriptHeader h2,
+    .scriptnav ul{
+        text-align:center;
+    }
+    .scriptnav ul{
+        margin-top:12px;
+    }
+    #float-right{
+        float:none;
+    }
+}
+.feedback{
+    width: 100%;
+    max-width: 780px;
+    background: #fff;
+    margin: 0 auto;
+    padding: 15px;
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.3);
+    text-align: center
+}
+.feedback img{
+    text-align: center;
+}
+.survey-hr{
+    margin:10px 0;
+    border: .5px solid #ddd;
+}
+.star-rating {
+    margin: 25px 0 0px;
+    font-size: 0;
+    white-space: nowrap;
+    display: inline-block;
+    width: 175px;
+    height: 35px;
+    overflow: hidden;
+    position: relative;
+    background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+    background-size: contain;
+}
+.star-rating i {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 20%;
+    z-index: 1;
+    background: url('data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=');
+    background-size: contain;
+}
+.star-rating input {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    opacity: 0;
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    position: relative;
+}
+.star-rating input:hover + i,
+.star-rating input:checked + i {
+    opacity: 1;
+}
+.star-rating i ~ i {
+    width: 40%;
+}
+.star-rating i ~ i ~ i {
+    width: 60%;
+}
+.star-rating i ~ i ~ i ~ i {
+    width: 80%;
+}
+.star-rating i ~ i ~ i ~ i ~ i {
+    width: 100%;
+}
+.choice {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+    display: block;
+}
+span.scale-rating{
+    margin: 5px 0 15px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+/*@media only screen and (min-width:720px) and (max-width: 1440px){*/
+/*    */
+/*}*/
+/*span.scale-rating>label {*/
+/*    outline: 0!important;*/
+/*    border: 1px solid #00000054;*/
+/*    height: 10%;*/
+/*    margin: 10px 0px 0 0px;*/
+/*    padding-left: 0px;*/
+/*    padding-bottom: 0px;*/
+/*    font-size: large;*/
+/*    font-weight: bolder;*/
+/*    text-align: center;*/
+/*    width: 3%;*/
+/*    border-radius: 50%;*/
+/*}*/
+@media only screen and (min-width:240px) and (max-width: 420px){
+    img{
+        text-align: center;
+        width: 100%;
+    }
+    span.scale-rating > label {
+        outline: 0!important;
+        border: 1px solid #00000054;
+        height: 5%;
+        margin: 1% 5px 0px 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        font-size: large;
+        font-weight: bolder;
+        text-align: center;
+        width: 10%;
+        border-radius: 60%;
+    }
+}
+@media only screen and (min-width:421px) and (max-width: 720px){
+    img{
+        text-align: center;
+        width: 100%;
+    }
+    span.scale-rating > label {
+        outline: 0!important;
+        border: 1px solid #00000054;
+        height: 5%;
+        margin: 1% 5px 0px 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        font-size: large;
+        font-weight: bolder;
+        text-align: center;
+        width: 5%;
+        border-radius: 60%;
+    }
+}
+@media screen and (min-width: 720px) and (max-width: 1080px) {
+    span.scale-rating{
+        margin: 5px 0 15px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    span.scale-rating > label {
+        outline: 0!important;
+        border: 2px solid #00000054;
+        height: 10%;
+        margin: 5% 0px 0 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        font-size: large;
+        font-weight: bolder;
+        /*text-align: center;*/
+        width: 4%;
+        border-radius: 50%;
+    }
+}
+
+@media (min-width: 1081px) {
+    span.scale-rating{
+        margin: 5px 0 15px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    span.scale-rating > label {
+        outline: 0!important;
+        border: 2px solid #00000054;
+        height: 10%;
+        margin: 5% 0px 0 0px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        font-size: large;
+        font-weight: bolder;
+        width: 4%;
+        border-radius: 50%;
+    }
+}
+
+/*span.scale-rating label {*/
+/*    position:relative;*/
+/*    -webkit-appearance: none;*/
+/*    outline:0 !important;*/
+/*    height:33px;*/
+/*    margin: 0 5px 0 0;*/
+/*    width: calc(10% - 7px);*/
+/*    float: left;*/
+/*    cursor:pointer;*/
+/*}*/
+/*a.scale-rating {*/
+/*    position:relative;*/
+/*    -webkit-appearance: none;*/
+/*    outline:0 !important;*/
+/*    border: 1px solid grey;*/
+/*    height:33px;*/
+/*    margin: 0 5px 0 0;*/
+/*    width: 100%;*/
+/*    cursor:pointer;*/
+/*}*/
+span.scale-rating input[type=radio] {
+    position:absolute;
+    -webkit-appearance: none;
+    opacity:0;
+    outline:0 !important;
+    /*border-right: 1px solid grey;*/
+    height:33px;
+    margin: 0 5px 0 0;
+    width: 100%;
+    float: left;
+    cursor:pointer;
+    z-index:3;
+}
+span.scale-rating label:hover{
+    background: #8dc1fd;
+    transform: scale(1.5);
+}
+span.scale-rating input[type=radio]:last-child{
+    border-right:0;
+}
+span.scale-rating label input[type=radio]:checked ~ label{
+    -webkit-appearance: none;
+    margin: 0;
+    background:#fddf8d;
+}
+span.scale-rating label:before
+{
+    content:attr(value);
+    top: 7px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    vertical-align: middle;
+    z-index:2;
+}
+</style>
+<html><head><meta charset="UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<meta name="author" content="Codeconvey" /><!--<link rel="stylesheet" href="style.css">--><!--Only for demo purpose - no need to add.--><!--<link rel="stylesheet" href="demo.css" />--></head><body>
+<div class="feedback">
+<form action="#action-url" method="post">
+<div class="clear">&nbsp;</div>
+
+<hr class="survey-hr" /><img src="https://3425005-sb1.app.netsuite.com/core/media/media.nl?id=44&amp;c=3425005_SB1&amp;h=t86CsY4XXYGWFLOTBt8TFKvhG2OJ1a586X_ntljL924nOnQ-" />
+<h4>How likely are you to recommend OX Tools UK to a friend or collegues?</h4>
+
+<hr class="survey-hr" /> <span class="scale-rating"> <label onclick="window.open(&quot;url=1&quot;)"> <!--<input type="submit" value="1" onclick= window.open('url=1') />--> <a href="url=1">1</a> <!--&lt;!&ndash;                <a href=>&ndash;&gt;--> <!--                --> <!--&lt;!&ndash;                    <input type="radio" name="rating" onclick= window.open('url=1') >&ndash;&gt;--> <!--&lt;!&ndash;                    <label style="width:100%;"></label>&ndash;&gt;--> <!--                &lt;!&ndash;                </a>&ndash;&gt;--> </label> <!--            </a>--> <!--            <a href="https://3425005-sb1.app.netsuite.com/app/site/hosting/scriptlet.nl?script=3266&deploy=1&id=<--id&ndash;&gt;&response=2&date=<--date&ndash;&gt;">--> <label> <!--                <input type="radio" name="rating" onclick= window.open('url=2') >--> <!--                <label style="width:100%;"></label>--> <a href="url=2">2 </a> </label> <!--            </a>--> <!--          <a href="https://3425005-sb1.app.netsuite.com/core/media/media.nl?id=44&c=3425005_SB1&h=t86CsY4XXYGWFLOTBt8TFKvhG2OJ1a586X_ntljL924nOnQ-">--> <label> <a href="url=3">3 </a> <!--          <input type="radio" name="rating" onclick= window.open('url=3') >--> <!--                <label style="width:100%;"></label>--> </label> <!--          </a>--> <!--            <a href="https://3425005-sb1.app.netsuite.com/core/media/media.nl?id=44&c=3425005_SB1&h=t86CsY4XXYGWFLOTBt8TFKvhG2OJ1a586X_ntljL924nOnQ-">--> <label> <a href="url=4">4 </a> <!--            <input type="radio" name="rating" onclick= window.open('url=4') >--> <!--            <label style="width:100%;"></label>--> </label> <!--            </a>--> <!--            <a href="https://3425005-sb1.app.netsuite.com/core/media/media.nl?id=44&c=3425005_SB1&h=t86CsY4XXYGWFLOTBt8TFKvhG2OJ1a586X_ntljL924nOnQ-">--> <label> <a href="url=5">5 </a> <!--          <input type="radio" name="rating" onclick= window.open('url=5') >--> <!--                <label style="width:100%;"></label>--> </label> <!--            </a>--> <!--            <a href="https://3425005-sb1.app.netsuite.com/core/media/media.nl?id=44&c=3425005_SB1&h=t86CsY4XXYGWFLOTBt8TFKvhG2OJ1a586X_ntljL924nOnQ-">--> <label> <a href="url=6">6 </a> <!--          <input type="radio" name="rating" onclick= window.open('url=6') >--> <!--                <label style="width:100%;"></label>--> </label> <!--            </a>--> <!--            <a href="https://3425005-sb1.app.netsuite.com/core/media/media.nl?id=44&c=3425005_SB1&h=t86CsY4XXYGWFLOTBt8TFKvhG2OJ1a586X_ntljL924nOnQ-">--> <label> <a href="url=7">7 </a> <!--                <input type="radio" name="rating" onclick= window.open('url=7') >--> <!--                <label style="width:100%;"></label>--> </label> <!--            </a>--> <!--            <a href="https://3425005-sb1.app.netsuite.com/core/media/media.nl?id=44&c=3425005_SB1&h=t86CsY4XXYGWFLOTBt8TFKvhG2OJ1a586X_ntljL924nOnQ-">--> <label> <a href="url=8">8 </a> <!--                <input type="radio" name="rating" onclick= window.open('url=8') >--> <!--                <label style="width:100%;"></label>--> </label> <!--            </a>--> <!--            <a href="https://3425005-sb1.app.netsuite.com/core/media/media.nl?id=44&c=3425005_SB1&h=t86CsY4XXYGWFLOTBt8TFKvhG2OJ1a586X_ntljL924nOnQ-">--> <label> <a href="url=9">9 </a> <!--          <input type="radio" name="rating" onclick= window.open('url=9') >--> <!--                <label style="width:100%;"></label>--> </label> <!--            </a>--> <!--            <a href="https://3425005-sb1.app.netsuite.com/core/media/media.nl?id=44&c=3425005_SB1&h=t86CsY4XXYGWFLOTBt8TFKvhG2OJ1a586X_ntljL924nOnQ-">--> <label> <a href="url=10">10 </a> <!--          <input type="radio" name="rating" onclick= window.open('url=10') >--> <!--                <label style="width:100%;"></label>--> </label> <!--            <label value="1">--> <!--  <input type="radio" name="rating" >--> <!--  <label style="width:100%;"></label>--> <!--  </label>--> <!--            <a href="https://3425005-sb1.extforms.netsuite.com/app/site/hosting/scriptlet.nl?script=3266&deploy=1&compid=3425005_SB1&h=2f595fd4c600e9b36adb&id=Cid&response=1">1</a>--> <!--            <a href="https://3425005-sb1.extforms.netsuite.com/app/site/hosting/scriptlet.nl?script=3266&deploy=1&compid=3425005_SB1&h=2f595fd4c600e9b36adb&id=Cid&response=2&date=Cdate">2</a>--> <!--            <a href="https://3425005-sb1.extforms.netsuite.com/app/site/hosting/scriptlet.nl?script=3266&deploy=1&compid=3425005_SB1&h=2f595fd4c600e9b36adb&id=Cid&response=3&date=Cdate">3</a>--> <!--            <a href="https://3425005-sb1.extforms.netsuite.com/app/site/hosting/scriptlet.nl?script=3266&deploy=1&compid=3425005_SB1&h=2f595fd4c600e9b36adb&id=Cid&response=4&date=Cdate">4</a>--> <!--            <a href="https://3425005-sb1.extforms.netsuite.com/app/site/hosting/scriptlet.nl?script=3266&deploy=1&compid=3425005_SB1&h=2f595fd4c600e9b36adb&id=Cid&response=5&date=Cdate">5</a>--> <!--            <a href="https://3425005-sb1.extforms.netsuite.com/app/site/hosting/scriptlet.nl?script=3266&deploy=1&compid=3425005_SB1&h=2f595fd4c600e9b36adb&id=Cid&response=6&date=Cdate">6</a>--> <!--            <a href="https://3425005-sb1.extforms.netsuite.com/app/site/hosting/scriptlet.nl?script=3266&deploy=1&compid=3425005_SB1&h=2f595fd4c600e9b36adb&id=Cid&response=7&date=Cdate">7</a>--> <!--            <a href="https://3425005-sb1.extforms.netsuite.com/app/site/hosting/scriptlet.nl?script=3266&deploy=1&compid=3425005_SB1&h=2f595fd4c600e9b36adb&id=Cid&response=8&date=Cdate">8</a>--> <!--            <a href="https://3425005-sb1.extforms.netsuite.com/app/site/hosting/scriptlet.nl?script=3266&deploy=1&compid=3425005_SB1&h=2f595fd4c600e9b36adb&id=Cid&response=9&date=Cdate">9</a>--> <!--            <a href="https://3425005-sb1.extforms.netsuite.com/app/site/hosting/scriptlet.nl?script=3266&deploy=1&compid=3425005_SB1&h=2f595fd4c600e9b36adb&id=Cid&response=10&date=Cdate">10</a>--> <!--            </a>--> </span><br />
+<span><strong><span style="float: left">1- Not likely</span></strong> <strong><span style="float: right">10- Very likely</span></strong> </span> <span> </span></form>
+<!-- Analytics --></div>
+</body></html>

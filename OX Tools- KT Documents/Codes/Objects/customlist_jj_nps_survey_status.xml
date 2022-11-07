@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_jj_nps_survey_status">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>NPS Survey Status</name>
+  <customvalues>
+    <customvalue scriptid="val_170647266_3425005_sb1_931">
+      <abbreviation>M</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Not Initiated</value>
+    </customvalue>
+    <customvalue scriptid="val_170647267_3425005_sb1_154">
+      <abbreviation>R</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Mailed</value>
+    </customvalue>
+    <customvalue scriptid="val_170650142_3425005_sb1_342">
+      <abbreviation>R</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Responded</value>
+    </customvalue>
+  </customvalues>
+</customlist>
